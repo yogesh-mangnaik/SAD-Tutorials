@@ -10,8 +10,6 @@ import java.util.Stack;
 
 public class Calculator{
 
-    private BasicCalculatorInterface calculator;
-
     //call to evaluate the string query
     public double evaluate(String query) {
         query = query.replaceAll("pi", Math.PI+"");
@@ -24,15 +22,14 @@ public class Calculator{
     //evaluate the postfixed expression stored in list
     private double evaluate(List<String> list){
         Stack<String> stack = new Stack<>();
-        for(int i=0; i<list.size(); i++){
-            if(list.get(i).equals("+")||list.get(i).equals("-")||list.get(i).equals("*")||list.get(i).equals("/")){
+        for (String aList : list) {
+            if (aList.equals("+") || aList.equals("-") || aList.equals("*") || aList.equals("/")) {
                 double a = Double.parseDouble(stack.pop());
                 double b = Double.parseDouble(stack.pop());
-                double[] values = new double[]{a,b};
-                stack.push(""+calculate(values,list.get(i).charAt(0)+""));
-            }
-            else{
-                stack.push(list.get(i));
+                double[] values = new double[]{a, b};
+                stack.push("" + calculate(values, aList.charAt(0) + ""));
+            } else {
+                stack.push(aList);
             }
         }
         return Double.valueOf(stack.pop());
@@ -124,17 +121,12 @@ public class Calculator{
 
     //check for precedence
     private boolean hasPrecedence(char op1, char op2) {
-        if (op2 == '(' || op2 == ')')
-            return false;
-        if ((op1 == '*' || op1 == '/') && (op2 == '+' || op2 == '-'))
-            return false;
-        else
-            return true;
+        return op2 != '(' && op2 != ')' && ((op1 != '*' && op1 != '/') || (op2 != '+' && op2 != '-'));
     }
 
     //call the evalutate function of calculators
     private double calculate(double[] values, String function){
-        calculator = CalculatorFactory.getCalculator(function);
+        BasicCalculatorInterface calculator = CalculatorFactory.getCalculator(function);
         return calculator.calculate(values, function);
     }
 

@@ -8,7 +8,7 @@ import com.mangnaik.yogesh.calculator.Calculator;
 /**
  * Created by Yogesh on 2/2/2018.
  */
-public class ClientHandler {
+class ClientHandler {
 
     private Thread thread;
     private Runnable runnable;

@@ -10,7 +10,7 @@ public class NetworkManager {
     final private DataOutputStream dos;
     final private Socket socket;
 
-    public NetworkManager(DataInputStream dis, DataOutputStream dos, Socket socket){
+    NetworkManager(DataInputStream dis, DataOutputStream dos, Socket socket){
         this.dis = dis;
         this.dos = dos;
         this.socket = socket;
