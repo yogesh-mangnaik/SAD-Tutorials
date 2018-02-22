@@ -1,33 +1,26 @@
+package com.mangnaik.yogesh.networkmanager;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
-public class NetworkManager {
+public class NetworkManagerServer {
     private DataInputStream dis;
     private DataOutputStream dos;
     private Socket socket;
-    final String host;
-    final int port;
 
-    public NetworkManager(DataInputStream dis, DataOutputStream dos, Socket socket){
-        this.dis = dis;
-        this.dos = dos;
+    public NetworkManagerServer(Socket socket) {
         this.socket = socket;
-        this.host = "";
-        this.port = 0;
+        try {
+            this.dis = new DataInputStream(socket.getInputStream());
+            this.dos = new DataOutputStream(socket.getOutputStream());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
-    public NetworkManager(String host, int port){
-        this.port = port;
-        this.host = host;
-    }
-
-    public void createConnection(){
-
-    }
-
-    public String receive(){
+    public String listen(){
         String received;
         try {
             received = dis.readUTF();
@@ -35,12 +28,7 @@ public class NetworkManager {
             return received;
         } catch (IOException e) {
             System.out.println("Disconnected");
-            try {
-                socket.close();
-                return "";
-            } catch (IOException e1) {
-                e1.printStackTrace();
-            }
+            close();
             e.printStackTrace();
         }
         return "";
@@ -48,15 +36,14 @@ public class NetworkManager {
 
     public void send(String answer){
         try{
-            System.out.println("Sending String" + answer);
             dos.writeUTF(answer);
         }
-        catch(IOException e){
+        catch (Exception e){
             e.printStackTrace();
         }
     }
 
-    public void close() {
+    private void close() {
         try {
             socket.close();
         } catch (IOException e) {

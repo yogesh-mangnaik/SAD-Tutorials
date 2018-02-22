@@ -1,19 +1,19 @@
-package com.mangnaik.yogesh.user;
+package com.mangnaik.yogesh.networkmanager;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
-public class NetworkManager {
+public class NetworkManagerClient {
 
-    Socket socket = null;
-    DataInputStream din = null;
-    DataOutputStream dout = null;
-    int port;
-    String host;
+    private Socket socket;
+    private DataInputStream dis;
+    private DataOutputStream dos;
+    private int port;
+    private String host;
 
-    public NetworkManager(String host, int port){
+    public NetworkManagerClient(String host, int port){
         this.port = port;
         this.host = host;
     }
@@ -31,22 +31,29 @@ public class NetworkManager {
             return;
         }
         try {
-            din = new DataInputStream(socket.getInputStream());
-            dout = new DataOutputStream(socket.getOutputStream());
+            dis = new DataInputStream(socket.getInputStream());
+            dos = new DataOutputStream(socket.getOutputStream());
         } catch (IOException e) {
             e.printStackTrace();
             System.out.println("Failed to connect to the server");
         }
     }
 
-    public String query(String query) throws IOException {
+    public String send(String query) {
         System.out.println("Sending query " + query);
-        dout.writeUTF(query);
-        String ans = din.readUTF();
-        return ans;
+        String answer = "";
+        try {
+            dos.writeUTF(query);
+            answer = dis.readUTF();
+        } catch (IOException e) {
+            close();
+            e.printStackTrace();
+        }
+        return answer;
+
     }
 
-    public void close() {
+    private void close() {
         try {
             socket.close();
         } catch (IOException e) {

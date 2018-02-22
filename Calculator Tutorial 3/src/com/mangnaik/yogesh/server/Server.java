@@ -14,17 +14,15 @@ import com.mangnaik.yogesh.calculator.Calculator;
  */
 public class Server {
 
-    ServerSocket socket;
-    List<ClientHandler> clients = new ArrayList<>();
+    private ServerSocket socket;
+    private List<ClientHandler> clients = new ArrayList<>();
 
-    public Server(){
+    private Server(){
         Calculator calculator = new Calculator();
-        double ans = calculator.evaluate("asin(1)");
-        System.out.println(ans);
         init();
     }
 
-    public void init(){
+    private void init(){
         try {
             socket = new ServerSocket(8192);
         } catch (IOException e) {
@@ -36,11 +34,10 @@ public class Server {
             try{
                 s = socket.accept();
                 System.out.println("A new client has connected");
-                DataInputStream dis = new DataInputStream(s.getInputStream());
-                DataOutputStream dos = new DataOutputStream(s.getOutputStream());
-                clients.add(new ClientHandler(dis, dos, s));
+                clients.add(new ClientHandler(s));
             } catch (IOException e) {
                 e.printStackTrace();
+                break;
             }
         }
     }

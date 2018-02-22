@@ -1,9 +1,9 @@
 package com.mangnaik.yogesh.server;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.net.Socket;
 import com.mangnaik.yogesh.calculator.Calculator;
+import com.mangnaik.yogesh.networkmanager.NetworkManagerServer;
+
+import java.net.Socket;
 
 /**
  * Created by Yogesh on 2/2/2018.
@@ -15,18 +15,18 @@ class ClientHandler {
     private String history;
     private Calculator calculator;
 
-    public ClientHandler(DataInputStream dis, DataOutputStream dos, Socket socket) {
-        init(dis, dos, socket);
+    ClientHandler(Socket socket) {
+        init(socket);
     }
 
-    public void init(DataInputStream dis, DataOutputStream dos, Socket socket){
-        NetworkManager networkManager = new NetworkManager(dis, dos, socket);
+    private void init(Socket socket){
+        NetworkManagerServer networkManager = new NetworkManagerServer(socket);
         calculator = new Calculator();
         history = "";
         runnable = () -> {
             while (true) {
                 System.out.println("ClientHandler is receiving");
-                String query = networkManager.receive();
+                String query = networkManager.listen();
                 System.out.println(query);
                 double answer = calculator.evaluate(query);
                 networkManager.send(answer+"");
