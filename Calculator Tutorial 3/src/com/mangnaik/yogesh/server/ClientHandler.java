@@ -8,14 +8,14 @@ import com.mangnaik.yogesh.calculator.Calculator;
 /**
  * Created by Yogesh on 2/2/2018.
  */
-public class Client {
+public class ClientHandler {
 
     private Thread thread;
     private Runnable runnable;
     private String history;
     private Calculator calculator;
 
-    public Client(DataInputStream dis, DataOutputStream dos, Socket socket) {
+    public ClientHandler(DataInputStream dis, DataOutputStream dos, Socket socket) {
         init(dis, dos, socket);
     }
 
@@ -25,7 +25,7 @@ public class Client {
         history = "";
         runnable = () -> {
             while (true) {
-                System.out.println("Client is receiving");
+                System.out.println("ClientHandler is receiving");
                 String query = networkManager.receive();
                 System.out.println(query);
                 double answer = calculator.evaluate(query);

@@ -23,7 +23,7 @@ public class NetworkManager {
             System.out.println("Received String : " + received);
             return received;
         } catch (IOException e) {
-            System.out.println("Client Disconnected");
+            System.out.println("ClientHandler Disconnected");
             try {
                 socket.close();
                 return "";

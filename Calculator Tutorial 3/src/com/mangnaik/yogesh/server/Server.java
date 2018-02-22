@@ -15,7 +15,7 @@ import com.mangnaik.yogesh.calculator.Calculator;
 public class Server {
 
     ServerSocket socket;
-    List<Client> clients = new ArrayList<>();
+    List<ClientHandler> clients = new ArrayList<>();
 
     public Server(){
         Calculator calculator = new Calculator();
@@ -38,7 +38,7 @@ public class Server {
                 System.out.println("A new client has connected");
                 DataInputStream dis = new DataInputStream(s.getInputStream());
                 DataOutputStream dos = new DataOutputStream(s.getOutputStream());
-                clients.add(new Client(dis, dos, s));
+                clients.add(new ClientHandler(dis, dos, s));
             } catch (IOException e) {
                 e.printStackTrace();
             }
