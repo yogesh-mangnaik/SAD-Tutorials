@@ -1,5 +1,7 @@
 package com.mangnaik.yogesh.calculator;
 
+import com.sun.istack.internal.NotNull;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
@@ -20,7 +22,7 @@ public class Calculator{
     }
 
     //evaluate the postfixed expression stored in list
-    private double evaluate(List<String> list){
+    private double evaluate(@NotNull List<String> list){
         Stack<String> stack = new Stack<>();
         for (String aList : list) {
             if (aList.equals("+") || aList.equals("-") || aList.equals("*") || aList.equals("/")) {
