@@ -24,10 +24,8 @@ public class NetworkManagerServer {
         String received;
         try {
             received = dis.readUTF();
-            System.out.println("Received String : " + received);
             return received;
         } catch (IOException e) {
-            System.out.println("Disconnected");
             close();
             e.printStackTrace();
         }

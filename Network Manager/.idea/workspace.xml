@@ -7,25 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc6d5519-679b-451b-a64b-0f23824d9758" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/mangnaik/yogesh/networkmanager/NetworkManagerServer.java" />
       <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Calculator Tutorial 3/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/Calculator Tutorial 3.iml" afterPath="$PROJECT_DIR$/../Calculator Tutorial 3/Calculator Tutorial 3.iml" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/out/production/Calculator Tutorial 3/com/mangnaik/yogesh/server/ClientHandler.class" afterPath="$PROJECT_DIR$/../Calculator Tutorial 3/out/production/Calculator Tutorial 3/com/mangnaik/yogesh/server/ClientHandler.class" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/out/production/Calculator Tutorial 3/com/mangnaik/yogesh/server/NetworkManager.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/out/production/Calculator Tutorial 3/com/mangnaik/yogesh/server/Server.class" afterPath="$PROJECT_DIR$/../Calculator Tutorial 3/out/production/Calculator Tutorial 3/com/mangnaik/yogesh/server/Server.class" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/out/production/Calculator Tutorial 3/com/mangnaik/yogesh/user/NetworkManager.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/out/production/Calculator Tutorial 3/com/mangnaik/yogesh/user/User.class" afterPath="$PROJECT_DIR$/../Calculator Tutorial 3/out/production/Calculator Tutorial 3/com/mangnaik/yogesh/user/User.class" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/src/com/mangnaik/yogesh/server/ClientHandler.java" afterPath="$PROJECT_DIR$/../Calculator Tutorial 3/src/com/mangnaik/yogesh/server/ClientHandler.java" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/src/com/mangnaik/yogesh/server/NetworkManager.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/src/com/mangnaik/yogesh/server/Server.java" afterPath="$PROJECT_DIR$/../Calculator Tutorial 3/src/com/mangnaik/yogesh/server/Server.java" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/src/com/mangnaik/yogesh/user/NetworkManager.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/src/com/mangnaik/yogesh/user/User.java" afterPath="$PROJECT_DIR$/../Calculator Tutorial 3/src/com/mangnaik/yogesh/user/User.java" />
-      <change beforePath="$PROJECT_DIR$/../Calculator/.idea/libraries/Arquillian_JUnit_Release.xml" afterPath="$PROJECT_DIR$/../Calculator/.idea/libraries/Arquillian_JUnit_Release.xml" />
       <change beforePath="$PROJECT_DIR$/../Calculator/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Calculator/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Network.java" afterPath="$PROJECT_DIR$/src/com/mangnaik/yogesh/networkmanager/NetworkManagerClient.java" />
-      <change beforePath="$PROJECT_DIR$/src/NetworkManager.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Network_Manager_jar/Network Manager.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/mangnaik/yogesh/networkmanager/NetworkManagerClient.java" afterPath="$PROJECT_DIR$/src/com/mangnaik/yogesh/networkmanager/NetworkManagerClient.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/mangnaik/yogesh/networkmanager/NetworkManagerServer.java" afterPath="$PROJECT_DIR$/src/com/mangnaik/yogesh/networkmanager/NetworkManagerServer.java" />
     </list>
     <ignored path="Network Manager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,11 +34,12 @@
       <file leaf-file-name="NetworkManagerServer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mangnaik/yogesh/networkmanager/NetworkManagerServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+            <state relative-caret-position="68">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="method#NetworkManagerServer#0;class#NetworkManagerServer#0" expanded="false" />
                 <element signature="method#listen#0;class#NetworkManagerServer#0" expanded="false" />
+                <element signature="method#send#0;class#NetworkManagerServer#0" expanded="false" />
                 <element signature="method#close#0;class#NetworkManagerServer#0" expanded="false" />
               </folding>
             </state>
@@ -72,12 +59,13 @@
       <file leaf-file-name="NetworkManagerClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/mangnaik/yogesh/networkmanager/NetworkManagerClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+            <state relative-caret-position="374">
+              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding>
                 <element signature="method#NetworkManagerClient#0;class#NetworkManagerClient#0" expanded="false" />
                 <element signature="method#getSocket#0;class#NetworkManagerClient#0" expanded="false" />
                 <element signature="method#createConnection#0;class#NetworkManagerClient#0" expanded="false" />
+                <element signature="method#send#0;class#NetworkManagerClient#0" expanded="false" />
                 <element signature="method#close#0;class#NetworkManagerClient#0" expanded="false" />
               </folding>
             </state>
@@ -85,6 +73,12 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>system.ou</find>
+      <find>System.out.println</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -107,6 +101,7 @@
         <option value="$PROJECT_DIR$/Network Manager.iml" />
         <option value="$PROJECT_DIR$/src/NetworkManagerServer.java" />
         <option value="$PROJECT_DIR$/src/NetworkManagerClient.java" />
+        <option value="$PROJECT_DIR$/src/com/mangnaik/yogesh/networkmanager/NetworkManagerClient.java" />
         <option value="$PROJECT_DIR$/src/com/mangnaik/yogesh/networkmanager/NetworkManagerServer.java" />
       </list>
     </option>
@@ -176,6 +171,10 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="network_manager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -295,7 +294,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1314000" />
+    <option name="totallyTimeSpent" value="1477000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -303,7 +302,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -345,7 +344,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -356,6 +357,7 @@
           <folding>
             <element signature="method#NetworkManagerServer#0;class#NetworkManagerServer#0" expanded="false" />
             <element signature="method#listen#0;class#NetworkManagerServer#0" expanded="false" />
+            <element signature="method#send#0;class#NetworkManagerServer#0" expanded="false" />
             <element signature="method#close#0;class#NetworkManagerServer#0" expanded="false" />
           </folding>
         </state>
@@ -369,6 +371,7 @@
             <element signature="method#NetworkManagerClient#0;class#NetworkManagerClient#0" expanded="false" />
             <element signature="method#getSocket#0;class#NetworkManagerClient#0" expanded="false" />
             <element signature="method#createConnection#0;class#NetworkManagerClient#0" expanded="false" />
+            <element signature="method#send#0;class#NetworkManagerClient#0" expanded="false" />
             <element signature="method#close#0;class#NetworkManagerClient#0" expanded="false" />
           </folding>
         </state>
@@ -389,6 +392,7 @@
           <folding>
             <element signature="method#NetworkManagerServer#0;class#NetworkManagerServer#0" expanded="false" />
             <element signature="method#listen#0;class#NetworkManagerServer#0" expanded="false" />
+            <element signature="method#send#0;class#NetworkManagerServer#0" expanded="false" />
             <element signature="method#close#0;class#NetworkManagerServer#0" expanded="false" />
           </folding>
         </state>
@@ -410,6 +414,7 @@
             <element signature="method#NetworkManagerClient#0;class#NetworkManagerClient#0" expanded="false" />
             <element signature="method#getSocket#0;class#NetworkManagerClient#0" expanded="false" />
             <element signature="method#createConnection#0;class#NetworkManagerClient#0" expanded="false" />
+            <element signature="method#send#0;class#NetworkManagerClient#0" expanded="false" />
             <element signature="method#close#0;class#NetworkManagerClient#0" expanded="false" />
           </folding>
         </state>
@@ -422,6 +427,7 @@
           <folding>
             <element signature="method#NetworkManagerServer#0;class#NetworkManagerServer#0" expanded="false" />
             <element signature="method#listen#0;class#NetworkManagerServer#0" expanded="false" />
+            <element signature="method#send#0;class#NetworkManagerServer#0" expanded="false" />
             <element signature="method#close#0;class#NetworkManagerServer#0" expanded="false" />
           </folding>
         </state>
@@ -435,6 +441,7 @@
             <element signature="method#NetworkManagerClient#0;class#NetworkManagerClient#0" expanded="false" />
             <element signature="method#getSocket#0;class#NetworkManagerClient#0" expanded="false" />
             <element signature="method#createConnection#0;class#NetworkManagerClient#0" expanded="false" />
+            <element signature="method#send#0;class#NetworkManagerClient#0" expanded="false" />
             <element signature="method#close#0;class#NetworkManagerClient#0" expanded="false" />
           </folding>
         </state>
@@ -447,6 +454,7 @@
           <folding>
             <element signature="method#NetworkManagerServer#0;class#NetworkManagerServer#0" expanded="false" />
             <element signature="method#listen#0;class#NetworkManagerServer#0" expanded="false" />
+            <element signature="method#send#0;class#NetworkManagerServer#0" expanded="false" />
             <element signature="method#close#0;class#NetworkManagerServer#0" expanded="false" />
           </folding>
         </state>
@@ -460,6 +468,7 @@
             <element signature="method#NetworkManagerClient#0;class#NetworkManagerClient#0" expanded="false" />
             <element signature="method#getSocket#0;class#NetworkManagerClient#0" expanded="false" />
             <element signature="method#createConnection#0;class#NetworkManagerClient#0" expanded="false" />
+            <element signature="method#send#0;class#NetworkManagerClient#0" expanded="false" />
             <element signature="method#close#0;class#NetworkManagerClient#0" expanded="false" />
           </folding>
         </state>
@@ -472,6 +481,7 @@
           <folding>
             <element signature="method#NetworkManagerServer#0;class#NetworkManagerServer#0" expanded="false" />
             <element signature="method#listen#0;class#NetworkManagerServer#0" expanded="false" />
+            <element signature="method#send#0;class#NetworkManagerServer#0" expanded="false" />
             <element signature="method#close#0;class#NetworkManagerServer#0" expanded="false" />
           </folding>
         </state>
@@ -485,6 +495,7 @@
             <element signature="method#NetworkManagerClient#0;class#NetworkManagerClient#0" expanded="false" />
             <element signature="method#getSocket#0;class#NetworkManagerClient#0" expanded="false" />
             <element signature="method#createConnection#0;class#NetworkManagerClient#0" expanded="false" />
+            <element signature="method#send#0;class#NetworkManagerClient#0" expanded="false" />
             <element signature="method#close#0;class#NetworkManagerClient#0" expanded="false" />
           </folding>
         </state>
@@ -500,11 +511,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mangnaik/yogesh/networkmanager/NetworkManagerServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+        <state relative-caret-position="68">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="method#NetworkManagerServer#0;class#NetworkManagerServer#0" expanded="false" />
             <element signature="method#listen#0;class#NetworkManagerServer#0" expanded="false" />
+            <element signature="method#send#0;class#NetworkManagerServer#0" expanded="false" />
             <element signature="method#close#0;class#NetworkManagerServer#0" expanded="false" />
           </folding>
         </state>
@@ -512,12 +524,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mangnaik/yogesh/networkmanager/NetworkManagerClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+        <state relative-caret-position="374">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding>
             <element signature="method#NetworkManagerClient#0;class#NetworkManagerClient#0" expanded="false" />
             <element signature="method#getSocket#0;class#NetworkManagerClient#0" expanded="false" />
             <element signature="method#createConnection#0;class#NetworkManagerClient#0" expanded="false" />
+            <element signature="method#send#0;class#NetworkManagerClient#0" expanded="false" />
             <element signature="method#close#0;class#NetworkManagerClient#0" expanded="false" />
           </folding>
         </state>

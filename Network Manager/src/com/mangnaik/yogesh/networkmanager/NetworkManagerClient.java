@@ -27,7 +27,6 @@ public class NetworkManagerClient {
             socket = getSocket();
         } catch (IOException e) {
             e.printStackTrace();
-            System.out.println ("Failed to Create Socket");
             return;
         }
         try {
@@ -35,12 +34,10 @@ public class NetworkManagerClient {
             dos = new DataOutputStream(socket.getOutputStream());
         } catch (IOException e) {
             e.printStackTrace();
-            System.out.println("Failed to connect to the server");
         }
     }
 
     public String send(String query) {
-        System.out.println("Sending query " + query);
         String answer = "";
         try {
             dos.writeUTF(query);

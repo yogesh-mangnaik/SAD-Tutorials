@@ -7,24 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb85adb1-4cda-4708-a2d5-a9fbd6f444ac" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../Network Manager/src/com/mangnaik/yogesh/networkmanager/NetworkManagerServer.java" />
       <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Calculator Tutorial 3/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/Calculator Tutorial 3.iml" afterPath="$PROJECT_DIR$/../Calculator Tutorial 3/Calculator Tutorial 3.iml" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/out/production/Calculator Tutorial 3/com/mangnaik/yogesh/server/ClientHandler.class" afterPath="$PROJECT_DIR$/../Calculator Tutorial 3/out/production/Calculator Tutorial 3/com/mangnaik/yogesh/server/ClientHandler.class" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/out/production/Calculator Tutorial 3/com/mangnaik/yogesh/server/NetworkManager.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/out/production/Calculator Tutorial 3/com/mangnaik/yogesh/server/Server.class" afterPath="$PROJECT_DIR$/../Calculator Tutorial 3/out/production/Calculator Tutorial 3/com/mangnaik/yogesh/server/Server.class" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/out/production/Calculator Tutorial 3/com/mangnaik/yogesh/user/NetworkManager.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/out/production/Calculator Tutorial 3/com/mangnaik/yogesh/user/User.class" afterPath="$PROJECT_DIR$/../Calculator Tutorial 3/out/production/Calculator Tutorial 3/com/mangnaik/yogesh/user/User.class" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/src/com/mangnaik/yogesh/server/ClientHandler.java" afterPath="$PROJECT_DIR$/../Calculator Tutorial 3/src/com/mangnaik/yogesh/server/ClientHandler.java" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/src/com/mangnaik/yogesh/server/NetworkManager.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/src/com/mangnaik/yogesh/server/Server.java" afterPath="$PROJECT_DIR$/../Calculator Tutorial 3/src/com/mangnaik/yogesh/server/Server.java" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/src/com/mangnaik/yogesh/user/NetworkManager.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../Calculator Tutorial 3/src/com/mangnaik/yogesh/user/User.java" afterPath="$PROJECT_DIR$/../Calculator Tutorial 3/src/com/mangnaik/yogesh/user/User.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Arquillian_JUnit_Release.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Arquillian_JUnit_Release.xml" />
-      <change beforePath="$PROJECT_DIR$/../Network Manager/.idea/misc.xml" afterPath="$PROJECT_DIR$/../Network Manager/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/../Network Manager/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Network Manager/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../Network Manager/src/Network.java" afterPath="$PROJECT_DIR$/../Network Manager/src/com/mangnaik/yogesh/networkmanager/NetworkManagerClient.java" />
-      <change beforePath="$PROJECT_DIR$/../Network Manager/src/NetworkManager.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Network Manager/out/artifacts/Network_Manager_jar/Network Manager.jar" afterPath="$PROJECT_DIR$/../Network Manager/out/artifacts/Network_Manager_jar/Network Manager.jar" />
+      <change beforePath="$PROJECT_DIR$/../Network Manager/out/production/Network Manager/com/mangnaik/yogesh/networkmanager/NetworkManagerClient.class" afterPath="$PROJECT_DIR$/../Network Manager/out/production/Network Manager/com/mangnaik/yogesh/networkmanager/NetworkManagerClient.class" />
+      <change beforePath="$PROJECT_DIR$/../Network Manager/out/production/Network Manager/com/mangnaik/yogesh/networkmanager/NetworkManagerServer.class" afterPath="$PROJECT_DIR$/../Network Manager/out/production/Network Manager/com/mangnaik/yogesh/networkmanager/NetworkManagerServer.class" />
+      <change beforePath="$PROJECT_DIR$/../Network Manager/src/com/mangnaik/yogesh/networkmanager/NetworkManagerClient.java" afterPath="$PROJECT_DIR$/../Network Manager/src/com/mangnaik/yogesh/networkmanager/NetworkManagerClient.java" />
+      <change beforePath="$PROJECT_DIR$/../Network Manager/src/com/mangnaik/yogesh/networkmanager/NetworkManagerServer.java" afterPath="$PROJECT_DIR$/../Network Manager/src/com/mangnaik/yogesh/networkmanager/NetworkManagerServer.java" />
     </list>
     <ignored path="Calculator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -113,8 +102,8 @@
       <file leaf-file-name="Calculator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/mangnaik/yogesh/calculator/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="408">
+              <caret line="26" column="59" lean-forward="true" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -572,6 +561,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mangnaik/yogesh/calculator/BasicCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mangnaik/yogesh/calculator/BasicCalculatorInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mangnaik/yogesh/calculator/CalculatorFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mangnaik/yogesh/calculator/ScientificCalculatorInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mangnaik/yogesh/calculator/StatisticalCalculatorInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mangnaik/yogesh/calculator/StatisticalCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="method#average#0;class#StatisticalCalculator#0" expanded="false" />
+            <element signature="method#max#0;class#StatisticalCalculator#0" expanded="false" />
+            <element signature="method#min#0;class#StatisticalCalculator#0" expanded="false" />
+            <element signature="method#sum#0;class#StatisticalCalculator#0" expanded="false" />
+            <element signature="method#calculate#0;class#StatisticalCalculator#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mangnaik/yogesh/calculator/CalculatorTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/mangnaik/yogesh/calculator/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="59" lean-forward="true" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mangnaik/yogesh/calculator/ScientificCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mangnaik/yogesh/calculator/ScientificCalculatorInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -910,8 +970,8 @@
     <entry file="file://$PROJECT_DIR$/src/com/mangnaik/yogesh/calculator/CalculatorTest.java" />
     <entry file="file://$PROJECT_DIR$/src/com/mangnaik/yogesh/calculator/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="408">
+          <caret line="26" column="59" lean-forward="true" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
           <folding />
         </state>
       </provider>
