@@ -53,6 +53,17 @@
               <item name="Calculator Tutorial 4" type="b2602c69:ProjectViewProjectNode" />
               <item name="Calculator Tutorial 4" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Calculator Tutorial 4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Calculator Tutorial 4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Calculator Tutorial 4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Calculator Tutorial 4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="yogesh" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -172,12 +183,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521649862878</updated>
-      <workItem from="1521649868927" duration="17000" />
+      <workItem from="1521649868927" duration="677000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17000" />
+    <option name="totallyTimeSpent" value="677000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
