@@ -47,7 +47,6 @@ public class NetworkManagerClient {
             e.printStackTrace();
         }
         return answer;
-
     }
 
     private void close() {
