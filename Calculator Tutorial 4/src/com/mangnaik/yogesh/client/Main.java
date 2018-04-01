@@ -3,7 +3,6 @@ package com.mangnaik.yogesh.client;
 import com.mangnaik.yogesh.client.controller.Controller;
 import com.mangnaik.yogesh.client.model.Model;
 import com.mangnaik.yogesh.client.views.ConsoleView;
-import com.mangnaik.yogesh.client.views.GUIView;
 import com.mangnaik.yogesh.client.views.View;
 
 import java.util.ArrayList;

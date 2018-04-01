@@ -3,9 +3,11 @@ package com.mangnaik.yogesh.client.views;
 import com.mangnaik.yogesh.client.model.Query;
 import java.util.Scanner;
 
-public class ConsoleView extends View {
+public class ConsoleView implements View {
 
     private Scanner scan;
+    boolean status;
+    Query data;
 
     public ConsoleView(){
         scan = new Scanner(System.in);
@@ -14,14 +16,16 @@ public class ConsoleView extends View {
 
     private void run() {
         Thread t = new Thread(() -> {
-            String input;
-            input = scan.nextLine();
-            data = new Query(input, 0);
-            status = true;
-            System.out.println("Data : " + input);
+            while(true){
+                String input;
+                input = scan.nextLine();
+                data = new Query(input, 0);
+                status = true;
+                System.out.println("Data : " + input);
+            }
         });
         System.out.println("Thread Running");
-        t.run();
+        t.start();
         System.out.println("Thread Running");
     }
 
@@ -38,6 +42,7 @@ public class ConsoleView extends View {
 
     @Override
     public Query getData() {
+        System.out.println(data.getQuery());
         return data;
     }
 

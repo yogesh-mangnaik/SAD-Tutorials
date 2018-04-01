@@ -13,27 +13,25 @@ public class Controller {
     private Model model;
 
     public Controller(List<View> view, Model model){
-        System.out.println("Controller constructor");
+        calculator = new Calculator();
         this.model = model;
         this.view = view;
         run();
     }
 
-    public void run(){
-        System.out.println("Polling Views");
+    private void run(){
         while(true){
             pollViews();
         }
     }
 
-    public void updateModel(Query query){
+    private void updateModel(Query query){
         model.update(query);
     }
 
-    public void pollViews(){
+    private void pollViews(){
         for(int i=0; i<view.size(); i++){
             if(view.get(i).getStatus()){
-                System.out.println("Query L " + view.get(i).getData().getQuery());
                 Query query = view.get(i).getData();
                 double answer = calculator.evaluate(query.getQuery());
                 query.setAnswer(answer);
