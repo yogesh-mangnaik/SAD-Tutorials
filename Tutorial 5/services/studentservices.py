@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request
 import csv
 import pandas as pd
+import urllib
+import json
 
 app = Flask(__name__)
 
@@ -16,6 +18,17 @@ def authuser():
 	if validate(name, p):
 		return "Successful Login"
 	return "Login Failed"
+
+@app.route('/user/viewcompanies', methods=['GET'])
+def viewCompanies():
+	response = urllib.request.urlopen('http://127.0.0.1:5003/company/list')
+	data = json.load(response)   
+	print(data)
+	return data['hello']
+
+@app.route('/user/allstudents', methods=['GET'])
+def allstudents():
+	return "All"
 
 def validate(name, password):
 	students = pd.read_csv('students.csv')
