@@ -30,13 +30,16 @@ def viewCompanies():
 def allstudents():
 	return "All"
 
+#working
 def validate(name, password):
 	students = pd.read_csv('students.csv')
 	print(students)
-	n = students['username']
-	p = students['pass']
+	col = students.columns.values
+	n = students[str(col[0])]
+	p = students[str(col[1])]
 	for i in range(len(students)):
-		if(name == password & password == p):
+		print(str(n[i]), str(name), str(p[i]), str(password))
+		if(str(n[i]).replace(' ', '') == str(name).replace(' ', '') and str(p[i]).replace(' ', '') == str(password).replace(' ', '')):
 			return True
 	return False
 
