@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request
 import pandas as pd
 import requests
+import urllib
+import json
 
 app = Flask(__name__)
 
@@ -22,8 +24,11 @@ def allcompanies():
 def viewcompanies():
 	response = urllib.request.urlopen('http://127.0.0.1:5003/company/list')
 	data = json.load(response)   
-	print(data)
-	return 'All companies'
+	s = ""
+	for i in range(len(data)):
+		s = s + "<div>" + data[str(i)] + "</div>";
+	print(s)
+	return s
 
 def addcompany(name, date, criteria, package, branches, number):
 	return "Request received"

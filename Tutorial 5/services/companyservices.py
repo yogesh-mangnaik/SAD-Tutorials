@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, Response
 import json
+import csv
+import pandas as pd
 
 app = Flask(__name__)
 
@@ -15,19 +17,25 @@ def apply():
 	criteria = request.form['criteria']
 	package = request.form['package']
 	branches = request.form['branches']
-	number = request.form['number']
-	addcompany(name, date, criteria, package, branches, number)
-	mydata = [[name, date, criteria, package, branches, number]]
-	r = requests.post("http://127.0.0.1:5004/tpo/addcompany", data={'name' : "h"})
-	print(r.status_code, r.reason)
+	print(name)
+	mydata = [[name, date, criteria, package, branches]]
+	with open('companies.csv', 'a') as file:
+		writer = csv.writer(file)
+		writer.writerows(mydata)
 	return "Successfully Registered"
 
 @app.route('/company/list', methods=['GET'])
 def list():
-    js = json.dumps({
-        'hello'  : 'world',
-        'number' : 3
-    })
+    data = {}
+    file = pd.read_csv('companies.csv')
+    cols = file.columns.values
+    for i in range(len(file)):
+    	data[str(i)] = "Company name : " + file[cols[0]][i]
+    	data[str(i)] += "Visiting Date : " + file[cols[1]][i]
+    	data[str(i)] += "Criteria : " + file[cols[2]][i]
+    	data[str(i)] += "Package : " + file[cols[3]][i]
+    	data[str(i)] += "Branches Allowed : " + file[cols[4]][i]
+    js = json.dumps(data)
     resp = Response(js, status=200, mimetype='application/json')
     resp.headers['Link'] = 'http://127.0.0.1:5003/company/list'
     return resp
